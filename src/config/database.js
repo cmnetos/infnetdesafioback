@@ -1,9 +1,9 @@
 module.exports = {
     dialect: 'mysql',
-    host: "us-cdbr-east-03.cleardb.com", 
-    username: "b0d6ae8edd53f0",
-    password: "955c6404",
-    database: "heroku_56dcaff9f5104df",
+    host: process.env.MYSQL_HOST, 
+    username: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASS,
+    database: process.env.MYSQL_DB,
     pool: {
         max: 5,
         min: 0,
