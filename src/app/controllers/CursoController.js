@@ -1,6 +1,6 @@
-import * as Yup from 'yup';
+const Yup = require('yup');
 
-import Curso from '../models/Curso';
+const Curso  = require('../models/Curso');
 
 class CursoController {
     async index(req, res){
@@ -44,4 +44,4 @@ class CursoController {
     }
 }
 
-export default new CursoController();
+module.exports = new CursoController();

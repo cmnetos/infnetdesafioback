@@ -1,10 +1,10 @@
-import { Router } from 'express';
+const { Router } = require('express');
 
-import authMiddleware from './app/middlewares/auth';
+const authMiddleware = require('./app/middlewares/auth');
 
-import UsuarioController from './app/controllers/UsuarioController';
-import AuthController from './app/controllers/AuthController';
-import CursoController from './app/controllers/CursoController';
+const UsuarioController = require('./app/controllers/UsuarioController');
+const AuthController = require('./app/controllers/AuthController');
+const CursoController = require('./app/controllers/CursoController');
 
 const routes = new Router();
 
@@ -35,4 +35,4 @@ routes.use((error, req, res, next) => {
 	next();
 });
 
-export default routes;
+module.exports = routes;

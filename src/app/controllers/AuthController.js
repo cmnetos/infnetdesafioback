@@ -1,9 +1,9 @@
-import jwt from 'jsonwebtoken';
-import * as Yup from 'yup';
+const jwt = require('jsonwebtoken');
+const Yup = require( 'yup');
 
-import Usuario from '../models/Usuario';
+const Usuario = require('../models/Usuario');
 
-import authConfig from '../../config/auth';
+const authConfig = require('../../config/auth');
 
 class AuthController {
     async store(req, res){
@@ -42,5 +42,4 @@ class AuthController {
     }
 }
 
-
-export default new AuthController();
+module.exports = new AuthController();

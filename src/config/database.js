@@ -1,9 +1,9 @@
 module.exports = {
     dialect: 'mysql',
-    host: "", 
-    username: "",
-    password: "",
-    database: "",
+    host: "infnet_desafio.mysql.dbaas.com.br", 
+    username: "infnet_desafio",
+    password: "infnet12345678",
+    database: "infnet_desafio",
     pool: {
         max: 5,
         min: 0,
